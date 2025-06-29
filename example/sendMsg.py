@@ -1,19 +1,19 @@
 '''
 Date: 2023-03-11 08:57:22
-LastEditTime: 2023-03-11 09:51:10
+LastEditTime: 2025-06-29 13:37 by sanlian114514
 
 Copyright (c) 2023 by S-i-l-v-e-t, All Rights Reserved. 
 '''
 import sys
 sys.path.append('..')
 
-from YHlib import setToken,sendMsg,batchSendMsg
+from YHlib import setToken,sendMsg
 
 class Message():
     def __init__(self):
         # 设置token
         # token字段值为机器人的Token，从云湖控制台获取
-        setToken(token="xxx")
+        setToken("xxx")
 
 
     ### 机器人给用户发送消息
@@ -27,7 +27,8 @@ class Message():
         recvType = "user"
         contentType = "text"
         content = "Batch Hello World"
-        batchSendMsg(recvIds, recvType, contentType, content)
+        for recvIds in recvId:
+            sendMsg(recvId,recvType,contentType,content)
 
 if __name__ == "__main__":
     obj = Message()
