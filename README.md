@@ -1,5 +1,5 @@
 # YHChatPythonSDK  
-# 原作者:@S-i-l-v-e-t (大抵是不维护了)
+# 原作者:云湖@- S i l v e t -(4213329) ​ (大抵是不维护了)
 ## 原SDK的魔改版
 
 此 SDK 适用于 Python3.7 及以上版本。  
